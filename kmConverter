@@ -1,0 +1,24 @@
+import java.util.*;
+public class practise{
+	
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int km, m, cm;
+		double f,in; //kilometers,meter,centimeter,feet,inches
+		System.out.println("Enter Distance In Kilometers: ");
+		
+		km = sc.nextInt();
+		// Calculate The Conversion
+		
+		m = km*1000;
+		cm = km*1000*100;
+		f = km * 3280.84;
+		in = km*39370.08;
+		
+		System.out.println("The distance in meter: "+m);
+		System.out.println("The distance in Centimeters: "+cm);
+		System.out.println("The distance in Feet: "+f);
+		System.out.println("The distance in Inches: "+in);
+	}
+}
