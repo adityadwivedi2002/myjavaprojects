@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class exammarks {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		float percentages,total=500; int english,maths, history, science, geography,sum;
+		System.out.println("English= ");
+		 english= sc.nextInt();
+		 System.out.println("Maths= ");
+		 maths= sc.nextInt();
+		 System.out.println("history= ");
+		 history= sc.nextInt();
+		 System.out.println("science= ");
+		 science= sc.nextInt();
+		 System.out.println("geography= ");
+		 geography= sc.nextInt();
+		 sum=english+maths+history+science+geography;
+		 System.out.println("Your total marks are= "+sum);
+		 System.out.println("Wait we process your percentage");
+		 percentages=sum*100/total;
+		 System.out.print("Your total percentage are "+percentages);
+		 if(percentages>34){
+			 System.out.println("Congrats You are passed");
+		 }else {
+			 System.out.println("You Are Failed");
+		 }
+
+	}
+
+}
