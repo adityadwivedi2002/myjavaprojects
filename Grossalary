@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class grossalary {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner (System.in);
+		int basic_salary,da1,hra1,da,hra;
+		float grosssalary;
+		System.out.print("Enter Your Basic Salary= ");
+		basic_salary= sc.nextInt();
+		
+		System.out.print("Enter Your dearness allowance= ");
+		da1=sc.nextInt();
+		
+		System.out.print("Enter Your House Rent Allowance= ");
+		hra1=sc.nextInt();
+		
+		da=(da1*basic_salary)/100;
+		hra=(hra1*basic_salary)/100;
+		
+		grosssalary=basic_salary+da+hra;
+		
+		System.out.println("Your Gross Salary is= "+grosssalary);
+		
+		
+
+	}
+
+}
